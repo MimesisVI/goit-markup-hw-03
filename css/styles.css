@@ -79,7 +79,6 @@ body {
 .header__nav {
     display: flex;
     align-items: center;
-    justify-content: center;
 }
 
 .header__menu {
@@ -103,7 +102,7 @@ body {
 
 .header__logo {
     font-family: var(--secondary-font);
-    font-weight: 700;
+    font-weight: 700;/*  */
     font-size: 26px;
     line-height: 1.19;
 
@@ -332,6 +331,7 @@ body {
 
 .container {
     width: 370px;
+    box-sizing: border-box;
     border-bottom: solid 1px var(--border-color);
     border-right: solid 1px var(--border-color);
     border-left: solid 1px var(--border-color);
@@ -403,7 +403,9 @@ body {
 }
 
 .footer__logo_bot {
+    display: block;
     color: #fff;
+    margin-bottom: 20px;
 }
 
 .header__logo_mod {
