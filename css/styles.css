@@ -68,6 +68,7 @@ body {
     padding-left: 215px;
     padding-right: 215px;
     height: 80px;
+    border-bottom: solid #ECECEC 1px;
 }
 
 .header__nav {
