@@ -66,14 +66,28 @@ body {
     color: var(--main-color);
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 1230px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
 /* -----------------------------------------------------------------  HEADER  -----------------------------------------------------------------*/
 
 .header {
     display: flex;
-    padding-left: 215px;
-    padding-right: 215px;
     height: 80px;
     border-bottom: solid var(--border-color) 1px;
+}
+
+.header > .container {
+    flex-direction: row;
 }
 
 .header__nav {
@@ -144,7 +158,10 @@ body {
 /* Hero */
 
 .main {
+    display: flex;
+    flex-direction: column;
     text-align: center;
+    justify-content: center;
 }
 
 .main__hero {
@@ -187,11 +204,13 @@ body {
 
 /*Наші плюси*/
 
+.main > .container {
+    flex-direction: column;
+    align-self: center;
+}
+
 .main__ours-plus {
-    display: block;
-    width: 1170px;
-    height: 98px;
-    margin: 0 215px 94px;
+    margin-bottom: 94px;
 }
 
 .main__ours-plus ul {
@@ -216,9 +235,8 @@ body {
 /* Чим ми займаємося */
 
 .main__work {
-    margin-left: 215px;
-    margin-right: 215px;
-    padding-bottom: 94px;
+    align-self: center;
+    margin-bottom: 94px;
 }
 
 .main__work__item {
@@ -243,10 +261,7 @@ body {
 /* Наша команда */
 
 .main__team {
-    width: 1600px;
     padding-top: 186px;
-    padding-left: 215px;
-    padding-right: 215px;
     padding-bottom: 94px;
 
     background-color: #F5F4FA;
@@ -267,8 +282,6 @@ body {
 .main__team__list {
     display: flex;
     justify-content: center;
-/*     margin-left: 215px;
-    margin-right: 215px; */
 }
 
 .main__team__list li+li {
@@ -304,11 +317,13 @@ body {
 /* Фiльтри */
 
 .main-port {
-    padding-left: 215px;
-    padding-right: 215px;
     margin-bottom: 94px;
     margin-top: 94px;
+
+    justify-content: center;
+    align-items: center;
 }
+
 
 .main-port__list {
     display: flex;
@@ -323,13 +338,11 @@ body {
 
 .main-port__list-2 {
     display: flex;
-    margin-top: 0;
-    margin-left: auto;
-    margin-right: auto;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
-.container {
+.main-port__container {
     width: 370px;
     box-sizing: border-box;
     border-bottom: solid 1px var(--border-color);
@@ -392,6 +405,15 @@ body {
     padding-bottom: 60px;
 
     background-color: var(--background-color);
+}
+
+.footer > .container {
+    display: flex;
+    margin-left: 0;
+    padding-left: 0;
+    flex-direction: column;
+    justify-content: left;
+
 }
 
 .header__logo {
